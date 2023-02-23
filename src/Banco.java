@@ -1,34 +1,33 @@
-import java.util.Scanner;
+/* Projeto criacao de uma conta bancaria simples com coleta e retorno de dados mistos
+* entre Strings e inteiros e variaveis*/
 
+
+import java.util.Scanner;
 public class Banco {
     public static void main(String[] args) {
-        Scanner in = new Scanner ( System.in);
 
+        Scanner scanner = new Scanner ( System.in);
 
 // ////////  Atributos Bancarios do usuario   //    /////////////////
 
 
-        int numero;
-
-        double agencia;
-
         String nomecliente;
+        String agencia;
+        double saldo;
+        int numero = 1021;
 
-        Double saldo;
+        agencia = "067-8";
+        saldo = 237.48;
+        nomecliente = "Mario Andrade";
 
-        String usuario;
+        System.out.println( "Por favor, digite o número da Conta: ");
+        String usuario = scanner.next();
 
-numero = 1021;
-agencia = 067.8;
-nomecliente = "Mario Andrade";
-saldo = 237.48;
+        System.out.println("O numero de sua Conta e: " + numero);
 
-System.out.print("Por favor digite o numero da agencia: ");
+        System.out.println("Ola " + nomecliente +  " Obrigado por criar uma conta em nosso Banco, sua Agência é:" + agencia +
+        " O numero de sua Conta:" + numero + " Seu saldo de: £" + saldo + "  está totalmente disponível para saque");
 
-
-
-
-
-        System.out.println("Ola " + nomecliente +  " Obrigado por criar uma conta em nosso Banco, sua Agência é: " + agencia + " Conta  " + numero + " Seu saldo de " + saldo + " Já está disponível para saque");
+        System.out.println("Se desejar outro servico , no momento estamos em processo de desenvolvimento;  muito obrigado ");
     }
 }
